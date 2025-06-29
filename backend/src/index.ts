@@ -8,6 +8,9 @@ app.use(cors())
 
 const TOTAL_DROPS = 16;
 
+
+
+
 const MULTIPLIERS: {[ key: number ]: number} = {
     0: 16,
     1: 9,
