@@ -1,6 +1,8 @@
 import { FaGithub, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
+
 export const Footer = () => {
   return (
     <footer className="border-t border-gray-600 py-12 text-white">
