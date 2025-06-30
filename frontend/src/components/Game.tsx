@@ -18,12 +18,15 @@ export function Game() {
     return (
         <div>
             <canvas ref={canvasRef} width="800" height="800"></canvas>
-            <button onClick={async() => {
-                const response = await axios.post(`${import.meta.env.VITE_API_URL}/game`, { data: 1 });
+            <button onClick={async () => {
+                const response = await axios.post(`https://plinkoo-s9ab.onrender.com/game`, { data: 1 });
                 if (ballManager) {
                     ballManager.addBall(response.data.point);
                 }
-            }}>Add ball</button>
+            }}>
+                Add ball
+            </button>
+
         </div>
     )
 }
